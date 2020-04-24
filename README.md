@@ -1,5 +1,5 @@
 # CoronaVirusTracker
-Web application that displays live statistics of Global cases
+Web application that displays live statistics of Global cases.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
