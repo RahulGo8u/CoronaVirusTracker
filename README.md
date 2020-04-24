@@ -1,2 +1,2 @@
 # CoronaVirusTracker
-Web application displays live statistics of Global cases
+Web application that displays live statistics of Global cases
