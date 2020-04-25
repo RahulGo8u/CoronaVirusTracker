@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Covid19APIService } from 'services/covid19-api.service'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'corona-virus-tracker';
+  constructor(private covid19API: Covid19APIService) {  
+    this.covid19API.getResponse();
+  };   
 }
