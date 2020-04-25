@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GlobalCasesListComponent } from './global-cases-list/global-cases-list.component';
+import { Covid19APIService } from '../../services/covid19-api.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { GlobalCasesListComponent } from './global-cases-list/global-cases-list.
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [Covid19APIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
