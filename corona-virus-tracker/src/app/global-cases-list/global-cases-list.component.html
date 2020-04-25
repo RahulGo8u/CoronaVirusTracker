@@ -2,35 +2,35 @@
   <h2>Global Cases {{currentDate|date}}</h2>
 </div>
 <div style="text-align:center;height:20px;">
-  <input type="text" style="background-color: white;" value="New Confirmed" />
-  <input type="text" style="background-color: lightgray;" value="Total Confirmed" />
-  <input type="text" style="background-color: red;" value="New Deaths" />
-  <input type="text" style="background-color: brown;" value="Total Deaths" />
-  <input type="text" style="background-color: aqua;" value="New Recovered" />
-  <input type="text" style="background-color: blue;" value="Total Recovered" />
+  <input type="text" style="background-color: white;" value="Total Cases" />
+  <input type="text" style="background-color: lightgray;" value="New Cases" />
+  <input type="text" style="background-color: red;" value="Total Deaths" />
+  <input type="text" style="background-color: brown;" value="New Deaths" />
+  <input type="text" style="background-color: aqua;" value="Total Recovered" />
+  <input type="text" style="background-color: lightgreen;" value="New Recovered" />
 </div>
 <br/>
 <div id="wrapper">
-  <div id="left" class="parent" style="background-color: white;">
-    <span class="child">{{newConfirmed | number: '2.'}}</span>
+  <div id="left" class="parent" style="background-color: white;">    
+    <span class="child">{{totalConfirmed | number: '2.'}}</span>
   </div>
   <div id="right" class="parent" style="background-color: lightgray;">
-    <span class="child">{{totalConfirmed | number: '2.'}}</span>
+    <span class="child">{{newConfirmed | number: '2.'}}</span>
   </div>
 </div>
 <div id="wrapper">
   <div id="left" class="parent" style="background-color: red;">
-    <span class="child">{{newDeaths |  number: '2.'}}</span>
+    <span class="child">{{totalDeaths |  number: '2.'}}</span>
   </div>
   <div id="right" class="parent" style="background-color: brown;">
-    <span class="child">{{totalDeaths | number: '2.'}}</span>
+    <span class="child">{{newDeaths | number: '2.'}}</span>
   </div>
 </div>
 <div id="wrapper">
   <div id="left" class="parent" style="background-color: aqua;">
-    <span class="child">{{newRecovered |  number: '2.'}}</span>
+    <span class="child">{{totalRecovered |  number: '2.'}}</span>
   </div>
-  <div id="right" class="parent" style="background-color: blue;">
-    <span class="child">{{totalRecovered | number: '2.'}}</span>
+  <div id="right" class="parent" style="background-color: lightgreen;">
+    <span class="child">{{newRecovered | number: '2.'}}</span>
   </div>
 </div>
