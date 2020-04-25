@@ -1,0 +1,35 @@
+#wrapper {
+  display: flex;
+  margin-left:10%;
+  margin-right:10%;
+
+}
+
+#left {
+  flex: 0 0 50%;
+  width:50%;
+}
+
+#right {
+  flex: 1;
+}
+
+.parent {
+  width: 150px;
+  height: 150px;
+  left: 5px;
+  top: 5px;
+  text-align: center;
+  border-style: solid;
+}
+
+.child {
+  line-height: 150px;
+  vertical-align: middle;
+  font-size: xx-large;
+}
+input {
+  text-align: center;
+  height: 33px;
+  font-size:medium;
+}

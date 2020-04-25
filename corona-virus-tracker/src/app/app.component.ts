@@ -7,7 +7,12 @@ import { Covid19APIService } from 'services/covid19-api.service'
 })
 export class AppComponent {
   title = 'corona-virus-tracker';
-  constructor(private covid19API: Covid19APIService) {  
-    this.covid19API.getResponse();
-  };   
+  showGlobalCases = false;
+  constructor(private covid19API: Covid19APIService) {
+    this.showGlobalCases = false;
+    this.covid19API.getResponse().then(x => this.onAPISuccess());
+  };
+  onAPISuccess() {
+    this.showGlobalCases = true;
+  }
 }
